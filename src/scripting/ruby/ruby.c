@@ -4,6 +4,9 @@
 #include "config.h"
 #endif
 
+#include <ruby.h>
+#include <ruby/version.h>
+
 #include "elinks.h"
 
 #include "intl/libintl.h"

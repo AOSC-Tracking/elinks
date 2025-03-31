@@ -48,6 +48,10 @@ intl_set_charset(struct terminal *term)
 
 #ifndef DEBUG_IT
 
+#ifdef _
+#undef _
+#endif
+
 /* Wraps around gettext(), employing charset multiplexing. If you don't care
  * about charset (usually during initialization or when you don't use terminals
  * at all), use gettext() directly. */
