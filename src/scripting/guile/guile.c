@@ -15,7 +15,7 @@ static const char *
 get_name_guile(struct module *xxx)
 {
 	static char elguileversion[32];
-	snprintf(elguileversion, 31, "Guile %s", scm_to_locale_string(scm_version()));
+	snprintf(elguileversion, 31, "Guile");
 
 	return elguileversion;
 }
